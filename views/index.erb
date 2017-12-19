@@ -1,0 +1,29 @@
+<html>
+    <h1>
+    CSV
+    </h1>
+
+    </html>
+
+<!doctype html>
+<html>
+<head>
+    <title>D3 tutorial</title>
+    	<meta charset="utf-8" />
+
+<!--    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>-->
+    <script src="js/d3.min.js" charset="utf-8"></script>
+</head> 
+<body>
+<script>
+    var file = "gas_prices.csv"
+d3.csv(file, function(data) {
+  for (var i = 0; i < data.length; i++) {
+      console.log(data[i].Name);
+      console.log(data[i].Age);
+  }
+});
+ 
+</script>
+</body> 
+</html>
