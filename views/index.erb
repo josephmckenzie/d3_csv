@@ -33,6 +33,15 @@
           </td>
         </tr>
     </table>
+    
+    <h4>Add New Stations & Prices</h4>
+     <form action="/update" method="post">
+         <label for="station">Station</label>
+         <input type="text" name="station" id="station">
+         <label for="price">Price</label>
+        <input type="text" name="price" id="price">
+         <input type="submit">
+     </form>
 
 <!--    <div id="gasprices"></div>-->
 <script>
@@ -42,11 +51,7 @@ d3.csv(file, function(data) {
       console.log(data[i].Name);
       console.log(data[i].Price);
       document.getElementById("gaspricesName").innerHTML += data[i].Name + "<br>"
-      document.getElementById("gaspricesPrice").innerHTML += data[i].Price + "<br>"
-
-
-      
-      
+      document.getElementById("gaspricesPrice").innerHTML += data[i].Price + "<br>"      
   }
 });
  
